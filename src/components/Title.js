@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default function Title(props) {
+export default function Title({title,description}) {
     const style1 = {border:'1px solid black',margin:'5px', borderRadius:'5px'};
+    console.log('in title');
+    console.log(title);
+    console.log(description);
   return (
     <div style={style1}> 
     <h1>Title Component</h1>
-    <h1>{props.title_name}</h1>
+    <h1>{title}</h1>
+    <p>{description}</p>
     </div>
   )
 }

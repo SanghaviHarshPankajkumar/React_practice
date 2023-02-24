@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
+import Counter from '../components/Counter';
 import Title from '../components/Title'
 
 export default class Home extends Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {
+          title:'title',
+          description:'desciption'
+        };
+      }
   render() {
-    const title1 ='first title';
-    const title2 = 'second title';
-    const title3 = 'third title';
+    
+    console.log(this.state);
     return (
-      <div> <Title title_name={title1}/> 
-      <Title title_name={title2}  />
-      <Title title_name={title3}/>
+      <div>
+        <Counter/>
+         <Title title ={this.state.title} description = {this.state.description}/> 
+      <Title title={this.state.title} description ={this.state.description}  />
+      <Title title={this.state.title} description={this.state.description}/>
       </div>
       
     )
