@@ -10,11 +10,12 @@ export class Counter extends Component {
      
   render() {
     const btn={
-        padding:'3px',
-        borderRadius:'5px',
+        padding:'7px',
+        borderRadius:'3px',
         fontSize:'20px',
-        backgroundColor:'black',
-        color:'white'
+        backgroundColor:'#007BFF',
+        color:'white',
+       
     }
     return (
       <div>

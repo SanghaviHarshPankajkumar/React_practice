@@ -1,0 +1,14 @@
+.container{
+    border:1px solid black;
+    margin: 35px;
+    border-radius:10px;
+    display: flex;
+   text-align: left;
+    flex-direction: column;
+    width: 25%;
+}
+.p{
+
+    display: block;
+    
+}
