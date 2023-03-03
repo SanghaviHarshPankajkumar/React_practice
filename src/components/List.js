@@ -24,6 +24,7 @@ export default function List() {
     }
 
 ];
+
  const style1={
     display:'flex',
     width:'100%',

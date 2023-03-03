@@ -1,6 +1,6 @@
 import React from 'react'
 import './Title.css';
-export default function Title({title,description}) {
+ function Title({title,description}) {
   
   return (
     <div className='container'> 
@@ -9,3 +9,4 @@ export default function Title({title,description}) {
     </div>
   )
 }
+export default React.memo(Title)
